@@ -92,6 +92,9 @@ padding: 40px 20px;
 
 .landing-page-photo-div img {
     width: 20rem;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    border-radius: 4px;
+
 }
 
 .landing-page-text-div h1 {
@@ -238,6 +241,7 @@ font-weight: bold;
 
 }
 
+
 .data-experiencia{
     font-size: 0.8rem;
     color: var(--c10);
@@ -283,6 +287,7 @@ font-weight: bold;
     font-size: 0.8rem;
     color: var(--c10);
     max-width: 20.5rem;
+    line-height: 1.5;
   
 }
 
@@ -291,8 +296,13 @@ font-weight: bold;
     font-weight: bold;
     color: black;
     display: inline-block;
-    margin-bottom: 10px;
     position: relative;
+    padding: 0px 10px 10px 0px
+}
+
+.titulo-projeto:hover{
+    transition: 0.3s;
+    color: var(--c4);
 }
 
 .titulo-projeto::after{
@@ -302,6 +312,8 @@ font-weight: bold;
     width: 19px;
     background: url(img/github-black.svg) no-repeat center center;
     margin-left: 5px;
+    position: relative;
+    top: 3px;
 
 }
 
@@ -594,19 +606,32 @@ color: white;
 }
 
 .contatos-lista li {
-    margin-bottom: 10px;
+    
     position: relative;
 }
 
 .contatos-lista li a {
-    color: white;
+    color: inherit;
+    padding: 10px 10px 10px 0;
+    display: inline-block;
 }
+
+.contatos-lista li p {
+    padding: 10px 10px 10px 0;
+}
+
+.contatos-lista li a:hover {
+    transition: 0.3s;
+    color: var(--c4);
+}
+
+
 
 .descricao-contato{
     display: block;
     color: var(--c7);
     font-size: 1.125rem;
-    margin-bottom: 10px;
+   
 }
 
 .github-link{
